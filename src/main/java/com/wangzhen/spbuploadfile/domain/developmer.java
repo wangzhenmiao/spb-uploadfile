@@ -8,5 +8,5 @@ package com.wangzhen.spbuploadfile.domain;
  **/
 public class developmer {
 
-    //write in idea on develop
+    //write web with master
 }
