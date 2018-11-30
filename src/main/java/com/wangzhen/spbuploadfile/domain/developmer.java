@@ -7,6 +7,6 @@ package com.wangzhen.spbuploadfile.domain;
  * @Date 2018/11/30 下午5:37
  **/
 public class developmer {
-  
-  //form web master write
+
+    //write in idea on develop
 }
