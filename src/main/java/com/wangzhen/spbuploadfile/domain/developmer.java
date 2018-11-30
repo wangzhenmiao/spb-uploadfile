@@ -8,5 +8,10 @@ package com.wangzhen.spbuploadfile.domain;
  **/
 public class developmer {
 
+<<<<<<< Updated upstream
     //write web with master
+=======
+    //write in idea on develop
+    //rewrite about cvs
+>>>>>>> Stashed changes
 }
