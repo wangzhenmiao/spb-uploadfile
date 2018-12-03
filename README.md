@@ -47,6 +47,7 @@ file.transferTo(new File(path+File.separator+ filename))：文件保存到制定
 五、通过对象上传文件
 
 1、ModelAttribute
+
          @RequestMapping(value="/register")
                      public String register(HttpServletRequest request,
                                    @ModelAttribute User user,
@@ -58,10 +59,11 @@ file.transferTo(new File(path+File.separator+ filename))：文件保存到制定
 
 2、Model
 
-@RequestMapping(value="/register")
-                     public String register(HttpServletRequest request,
-                                   @ModelAttribute User user,
-                                   Model model)throws Exception{
+
+    @RequestMapping(value="/register")
+     public String register(HttpServletRequest request,
+                            @ModelAttribute User user,
+                            Model model)throws Exception{
                                    
 函数体内执行完之后，可以
 
