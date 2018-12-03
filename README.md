@@ -44,4 +44,30 @@ file.transferTo(new File(path+File.separator+ filename))：文件保存到制定
         # All files max size
         spring.servlet.multipart.maxRequestSize=50MB
 
+五、通过对象上传文件
+
+1、ModelAttribute
+         @RequestMapping(value="/register")
+                     public String register(HttpServletRequest request,
+                                   @ModelAttribute User user,
+                                   Model model)throws Exception{
+                                   
+@ModelAttribute 注解将表单参数绑定到User对象，前端html的元素的name都是对象的属性
+
+在controller的方法中，使用@ModelAttribute 把表单参数绑定到方法的入参对象
+
+2、Model
+
+@RequestMapping(value="/register")
+                     public String register(HttpServletRequest request,
+                                   @ModelAttribute User user,
+                                   Model model)throws Exception{
+                                   
+函数体内执行完之后，可以
+
+// 将用户添加到model
+            model.addAttribute("user", user);
+把用户信息放到model中，跳转到html中使用
+        
+        <td th:text="${user.username}">用户名</td>
     
